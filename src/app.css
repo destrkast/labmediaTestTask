@@ -1,0 +1,26 @@
+.app {
+  width: 100%;
+  max-width: 1024px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app__search {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 20px 20px -10px #ddd;
+}
+
+.app__clear-filters-button {
+  margin-top: 16px;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.app__clear-filters-button:hover {
+  color: rgb(55, 118, 255);
+}

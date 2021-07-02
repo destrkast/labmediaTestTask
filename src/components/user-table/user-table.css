@@ -1,0 +1,23 @@
+.user-table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 8px;
+  box-shadow: 0 20px 20px -10px #ddd;
+}
+
+.user-table__header-cell {
+  color: #999;
+  font-weight: 400;
+  text-align: left;
+  padding: 8px 12px;
+}
+
+.user-table__cell {
+  padding: 8px 12px;
+}
+
+.user-table__cell_username {
+  color: #78a3ff;
+  font-weight: 700;
+}
