@@ -1,0 +1,24 @@
+.pagination {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.pagination__button {
+  margin: 0 5px;
+  border: 0;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pagination__button:hover {
+  color: #78a3ff;
+}
+
+.pagination__button_active {
+  color: #78a3ff;
+  font-weight: 700;
+  cursor: default;
+}

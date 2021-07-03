@@ -149,6 +149,10 @@ const App = () => {
 
   const amountOfPages = Math.ceil(filteredUsers.length / USERS_ON_PAGE);
 
+  if (amountOfPages !== 0 && amountOfPages < currentPage) {
+    setCurrentPage(amountOfPages);
+  }
+
   return (
     <div className="app">
       <PageTitle>Список пользователей</PageTitle>
@@ -169,12 +173,12 @@ const App = () => {
           </button>
         )}
       </div>
-      <p>
+      <p className="app__sorting">
         Сортировка:{' '}
-        <button type="button" onClick={sortByDate}>
+        <button className={`app_sorting-button ${sortType === REGISTRATION_DATE_SORT ? 'app_sorting-button_active' : ''}`} type="button" onClick={sortByDate}>
           Дата регистрации
         </button>{' '}
-        <button type="button" onClick={sortByRating}>
+        <button className={`app_sorting-button ${sortType === RATING_SORT ? 'app_sorting-button_active' : ''}`} type="button" onClick={sortByRating}>
           Рейтинг
         </button>
       </p>

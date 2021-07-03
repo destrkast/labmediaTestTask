@@ -1,15 +1,15 @@
 .app {
+  box-sizing: border-box;
   width: 100%;
   max-width: 1024px;
-  box-sizing: border-box;
   margin: 0 auto;
   padding: 24px;
 }
 
 .app__search {
-  background-color: #fff;
   border-radius: 12px;
   padding: 20px;
+  background-color: #fff;
   box-shadow: 0 20px 20px -10px #ddd;
 }
 
@@ -17,10 +17,39 @@
   margin-top: 16px;
   border: 0;
   background: none;
+  font-size: inherit;
   font-family: inherit;
   cursor: pointer;
 }
 
 .app__clear-filters-button:hover {
   color: rgb(55, 118, 255);
+}
+
+.app__sorting {
+  color: #999;
+}
+
+.app_sorting-button {
+  border: 0;
+  padding: 0 0 2px;
+  background-color: transparent;
+  background-image: linear-gradient(to right, #999 75%, transparent 75%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 6px 2px;
+  color: #999;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.app_sorting-button:hover {
+  background-image: linear-gradient(to right, #3776ff 75%, transparent 75%);
+  color: #3776ff;
+}
+
+.app_sorting-button_active {
+  background-image: linear-gradient(to right, #000 75%, transparent 75%);
+  color: #000;
 }
