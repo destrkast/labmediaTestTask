@@ -8,7 +8,7 @@ const UserTable = (props) => {
           <tr>
             <th className="user-table__header-cell">Имя пользователя</th>
             <th className="user-table__header-cell">E-mail</th>
-            <th className="user-table__header-cell user-table__header-cell_date">Дата регистрации</th>
+            <th className="user-table__header-cell">Дата регистрации</th>
             <th className="user-table__header-cell">Рейтинг</th>
           </tr>
         </thead>
