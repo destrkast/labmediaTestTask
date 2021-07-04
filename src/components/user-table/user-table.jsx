@@ -6,10 +6,11 @@ const UserTable = (props) => {
       <table className="user-table__content">
         <thead>
           <tr>
-            <th className="user-table__header-cell">Имя пользователя</th>
-            <th className="user-table__header-cell">E-mail</th>
-            <th className="user-table__header-cell">Дата регистрации</th>
-            <th className="user-table__header-cell">Рейтинг</th>
+            <th className="user-table__cell user-table__cell_header">Имя пользователя</th>
+            <th className="user-table__cell user-table__cell_header">E-mail</th>
+            <th className="user-table__cell user-table__cell_header">Дата регистрации</th>
+            <th className="user-table__cell user-table__cell_header">Рейтинг</th>
+            <th className="user-table__cell user-table__cell_header"/>
           </tr>
         </thead>
         <tbody>
@@ -18,11 +19,11 @@ const UserTable = (props) => {
               <td className="user-table__cell user-table__cell_username">
                 {user.username}
               </td>
-              <td className="user-table__cell user-table__cell_email">{user.email}</td>
-              <td className="user-table__cell user-table__cell_date">
+              <td className="user-table__cell">{user.email}</td>
+              <td className="user-table__cell">
                 {user.registration_date.toLocaleDateString()}
               </td>
-              <td className="user-table__cell user-table__cell_rating">{user.rating}</td>
+              <td className="user-table__cell">{user.rating}</td>
               <td className="user-table__cell user-table__cell_action">
                 <button
                   className="user-table__delete-button"

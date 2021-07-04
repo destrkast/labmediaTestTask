@@ -7,53 +7,60 @@
 
 .user-table__content {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
-.user-table__header-cell {
+.user-table__cell {
+  box-sizing: border-box;
   padding: 8px 12px;
+  box-shadow: inset 0 1px 0 0 #ccc;
+  word-wrap: break-word;
+}
+
+.user-table__cell_header {
   color: #999;
+  box-shadow: none;
   font-weight: 400;
   text-align: left;
 }
 
-.user-table__cell {
-  padding: 8px 12px;
-  box-shadow: inset 0 1px 0 0 #ccc;
+.user-table__cell:nth-child(1) {
+  width: 25%;
+}
+
+.user-table__cell:nth-child(2) {
+  width: 30%;
+}
+
+.user-table__cell:nth-child(3) {
+  width: 20%;
+}
+
+.user-table__cell:nth-child(4) {
+  width: 10%;
+}
+
+.user-table__cell:nth-child(5) {
+  width: 15%;
 }
 
 .user-table__cell_username {
   color: #78a3ff;
   font-weight: 700;
-  width: 25%;
-}
-
-.user-table__cell_email {
-  width: 30%;
-}
-
-.user-table__cell_date {
-  width: 20%;
-}
-
-.user-table__cell_rating {
-  width: 10%;
 }
 
 .user-table__cell_action {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 82%;
+  text-align: right;
 }
 
 .user-table__delete-button {
- width: 30px;
- height: 24px;
- margin: 0;
- border: 0;
- padding: 0;
- background: transparent url('./user-table__delete-icon.svg') no-repeat 50%;
- text-align: center;
- cursor: pointer;
+  width: 30px;
+  height: 24px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: transparent url('./user-table__delete-icon.svg') no-repeat 50%;
+  text-align: center;
+  cursor: pointer;
 }
